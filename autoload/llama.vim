@@ -68,7 +68,7 @@ let s:default_config = {
 let llama_config = get(g:, 'llama_config', s:default_config)
 let g:llama_config = extendnew(s:default_config, llama_config, 'force')
 
-let s:llama_enabled = v:true
+let s:llama_enabled = v:false
 
 " containes cached responses from the server
 " used to avoid re-computing the same completions and to also create new completions with similar context
